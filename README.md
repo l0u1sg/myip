@@ -3,7 +3,7 @@
 Hi, welcome to **My IP**. A simple service to know your IP address
 
 ## Badges
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/981d1497-345c-4683-8a06-5370e1056d90/deploy-status)](https://app.netlify.com/sites/monip/deploys)
 
 ## Usage 
 
