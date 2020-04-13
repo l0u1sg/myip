@@ -7,7 +7,7 @@ Hi, welcome to **My IP**. A simple service to know your IP address
 
 ## Usage 
 
-You can go to ip.louisgallet.online to know your IP address or you can install our service (see [installation](#installation))
+You can go to [ip.louisgallet.online](https://ip.louisgallet.online) to know your IP address or you can install our service (see [installation](#installation))
 
 ## About
 
