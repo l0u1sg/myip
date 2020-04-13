@@ -2,6 +2,8 @@
 
 Hi, welcome to **My IP**. A simple service to know your IP address
 
+## Badges
+
 
 ## Usage 
 
@@ -9,8 +11,8 @@ You can go to ip.louisgallet.online to know your IP address or you can install o
 
 ## About
 
-This service works with **IPFY**. By using this service, you agree that a request can be made to this service. 
-This service has also been created with **SweetAlert2** which provides the design of this site.*
+This service works with **IPFY**. By using this service, you agree that a request can be made to this service.   
+This service has also been created with **SweetAlert2** which provides the design of this site.
 
 
 ## Installation 
@@ -26,5 +28,5 @@ $ cd myip
 
 ## Thanks to
 
-**louisgallet95** : Developpers - [GitHub](https://github.com/louisgallet95)
+**louisgallet95** : Developpers - [GitHub](https://github.com/louisgallet95)  
 **SweetAlert2** : Design - [GitHub](https://github.com/sweetalert2/sweetalert2)
