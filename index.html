@@ -1,37 +1,48 @@
 <html>
-    <head>
-        <title>Mon IP</title>
-        <script data-ad-client="ca-pub-4801316275827635" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    </head>
-    <body>
 
-    
-        <script src="sweetalert/sweetalert2.min.js"></script>
-        <link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <script>
-                const ipAPI = '//api.ipify.org?format=json'
+<head>
+    <title>My IP</title>
+    <script data-ad-client="ca-pub-4801316275827635" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Welcome to my ip service</h1>
+    <script src="sweetalert/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        const ipAPI = '//api.ipify.org?format=json'
 
         Swal.queue([{
-        title: 'Your public IP',
-        confirmButtonText: 'Show my public IP',
-        text:
-            'Your public IP will be received ' +
-            'via AJAX & IPIFY request',
-        showLoaderOnConfirm: true,
-        preConfirm: () => {
-            return fetch(ipAPI)
-            .then(response => response.json())
-            .then(data => Swal.insertQueueStep(data.ip))
-            .catch(() => {
-                Swal.insertQueueStep({
-                icon: 'error',
-                title: 'Unable to get your public IP'
-                })
-            })
-        }
+            title: 'Your public IP',
+            confirmButtonText: 'Show my public IP',
+            text:
+                'Your public IP will be received ' +
+                'via AJAX & IPIFY request',
+            showLoaderOnConfirm: true,
+            preConfirm: () => {
+                return fetch(ipAPI)
+                    .then(response => response.json())
+                    .then(data => Swal.insertQueueStep("Your IP is " + data.ip))
+                    .catch(() => {
+                        Swal.insertQueueStep({
+                            icon: 'error',
+                            title: 'Unable to get your public IP'
+                        })
+                    })
+            }
         }])
-        </script>
+    </script>
 
-    </body>
+    <button style="display: block;
+    margin: 0 auto;
+" onClick="window.location.reload();">Start again</button>
+
+
+</body>
+
 </html>
